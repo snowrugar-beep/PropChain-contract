@@ -1,5 +1,5 @@
 # 🛡️ Automated Security & Mutation Audit Log
-Generated on: Thu Nov 19 09:59:30 UTC 2026
+Generated on: Fri Nov 20 09:49:03 UTC 2026
 ---
 ## 📦 Dependency License & Advisory Checks (cargo-deny)
 ```text
@@ -9,7 +9,7 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[36m20[0m [0m[36m│[0m [0m[31munlicensed[0m = "deny"
    [0m[36m│[0m [0m[31m━━━━━━━━━━[0m
 
-2026-11-19 09:59:30 [[31mERROR[0m] failed to validate configuration file /home/runner/work/PropChain-contract/PropChain-contract/deny.toml[0m
+2026-11-20 09:49:03 [[31mERROR[0m] failed to validate configuration file /home/runner/work/PropChain-contract/PropChain-contract/deny.toml[0m
 ```
 ---
 ## 🔍 Vulnerability Advisory Scans (cargo-audit)
@@ -72,6 +72,22 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
 [0m[0m[1m[31mVersion:  [0m 0.101.7
+[0m[0m[1m[31mTitle:    [0m Name constraints were accepted for certificates asserting a wildcard name
+[0m[0m[1m[31mDate:     [0m 2026-04-14
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0099
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0099
+[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
+
+[0m[0m[1m[31mCrate:    [0m rustls-webpki
+[0m[0m[1m[31mVersion:  [0m 0.101.7
+[0m[0m[1m[31mTitle:    [0m Name constraints for URI names were incorrectly accepted
+[0m[0m[1m[31mDate:     [0m 2026-04-14
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0098
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0098
+[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
+
+[0m[0m[1m[31mCrate:    [0m rustls-webpki
+[0m[0m[1m[31mVersion:  [0m 0.101.7
 [0m[0m[1m[31mTitle:    [0m Reachable panic in certificate revocation list parsing
 [0m[0m[1m[31mDate:     [0m 2026-04-22
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0104
@@ -87,36 +103,12 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.16, <0.104.0-alpha.1 OR >=0.104.0-alpha.8
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.101.7
-[0m[0m[1m[31mTitle:    [0m Name constraints for URI names were incorrectly accepted
-[0m[0m[1m[31mDate:     [0m 2026-04-14
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0098
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0098
-[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
-
-[0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.101.7
+[0m[0m[1m[31mVersion:  [0m 0.102.8
 [0m[0m[1m[31mTitle:    [0m Name constraints were accepted for certificates asserting a wildcard name
 [0m[0m[1m[31mDate:     [0m 2026-04-14
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0099
 [0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0099
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
-
-[0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.102.8
-[0m[0m[1m[31mTitle:    [0m Reachable panic in certificate revocation list parsing
-[0m[0m[1m[31mDate:     [0m 2026-04-22
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0104
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0104
-[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.13, <0.104.0-alpha.1 OR >=0.104.0-alpha.7
-
-[0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.102.8
-[0m[0m[1m[31mTitle:    [0m Certificate verification may accept distrusted intermediates
-[0m[0m[1m[31mDate:     [0m 2026-10-20
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0382
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0382
-[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.16, <0.104.0-alpha.1 OR >=0.104.0-alpha.8
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
 [0m[0m[1m[31mVersion:  [0m 0.102.8
@@ -124,14 +116,6 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[0m[1m[31mDate:     [0m 2026-04-14
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0098
 [0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0098
-[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
-
-[0m[0m[1m[31mCrate:    [0m rustls-webpki
-[0m[0m[1m[31mVersion:  [0m 0.102.8
-[0m[0m[1m[31mTitle:    [0m Name constraints were accepted for certificates asserting a wildcard name
-[0m[0m[1m[31mDate:     [0m 2026-04-14
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0099
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0099
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.12, <0.104.0-alpha.1 OR >=0.104.0-alpha.6
 
 [0m[0m[1m[31mCrate:    [0m rustls-webpki
@@ -142,6 +126,22 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0049
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.10
 
+[0m[0m[1m[31mCrate:    [0m rustls-webpki
+[0m[0m[1m[31mVersion:  [0m 0.102.8
+[0m[0m[1m[31mTitle:    [0m Reachable panic in certificate revocation list parsing
+[0m[0m[1m[31mDate:     [0m 2026-04-22
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0104
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0104
+[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.13, <0.104.0-alpha.1 OR >=0.104.0-alpha.7
+
+[0m[0m[1m[31mCrate:    [0m rustls-webpki
+[0m[0m[1m[31mVersion:  [0m 0.102.8
+[0m[0m[1m[31mTitle:    [0m Certificate verification may accept distrusted intermediates
+[0m[0m[1m[31mDate:     [0m 2026-10-20
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0382
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0382
+[0m[0m[1m[31mSolution: [0m Upgrade to >=0.103.16, <0.104.0-alpha.1 OR >=0.104.0-alpha.8
+
 [0m[0m[1m[31mCrate:    [0m ruzstd
 [0m[0m[1m[31mVersion:  [0m 0.5.0
 [0m[0m[1m[31mTitle:    [0m Decompression bomb in `ruzstd`: a tiny input can exhaust memory (OOM)
@@ -150,32 +150,6 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0344
 [0m[0m[1m[31mSeverity: [0m 7.5 (high)
 [0m[0m[1m[31mSolution: [0m Upgrade to >=0.9.1
-
-[0m[0m[1m[31mCrate:    [0m zip
-[0m[0m[1m[31mVersion:  [0m 2.3.0
-[0m[0m[1m[31mTitle:    [0m zip: `ZipArchive::extract` aborts the process on a symlink entry with a large declared size
-[0m[0m[1m[31mDate:     [0m 2026-10-22
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0429
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0429
-[0m[0m[1m[31mSeverity: [0m 7.5 (high)
-[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
-
-[0m[0m[1m[31mCrate:    [0m zip
-[0m[0m[1m[31mVersion:  [0m 2.3.0
-[0m[0m[1m[31mTitle:    [0m ZipStreamReader::extract() and ZipArchive::extract() apply Unix permissions through symlinks without confining the target
-[0m[0m[1m[31mDate:     [0m 2026-10-10
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0369
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0369
-[0m[0m[1m[31mSeverity: [0m 9.1 (critical)
-[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
-
-[0m[0m[1m[31mCrate:    [0m zip
-[0m[0m[1m[31mVersion:  [0m 2.3.0
-[0m[0m[1m[31mTitle:    [0m zip: `ZipArchive::extract` creates symbolic links whose attacker-controlled targets are outside the destination directory
-[0m[0m[1m[31mDate:     [0m 2026-10-09
-[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0368
-[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0368
-[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
 
 [0m[0m[1m[31mCrate:    [0m zip
 [0m[0m[1m[31mVersion:  [0m 2.3.0
@@ -196,11 +170,37 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 
 [0m[0m[1m[31mCrate:    [0m zip
 [0m[0m[1m[31mVersion:  [0m 2.3.0
+[0m[0m[1m[31mTitle:    [0m zip: `ZipArchive::extract` aborts the process on a symlink entry with a large declared size
+[0m[0m[1m[31mDate:     [0m 2026-10-22
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0429
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0429
+[0m[0m[1m[31mSeverity: [0m 7.5 (high)
+[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
+
+[0m[0m[1m[31mCrate:    [0m zip
+[0m[0m[1m[31mVersion:  [0m 2.3.0
 [0m[0m[1m[31mTitle:    [0m AES entries returned without checking their authentication code when the data ends early or is empty
 [0m[0m[1m[31mDate:     [0m 2026-10-22
 [0m[0m[1m[31mID:       [0m RUSTSEC-2026-0545
 [0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0545
 [0m[0m[1m[31mSeverity: [0m 6.5 (medium)
+[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
+
+[0m[0m[1m[31mCrate:    [0m zip
+[0m[0m[1m[31mVersion:  [0m 2.3.0
+[0m[0m[1m[31mTitle:    [0m ZipStreamReader::extract() and ZipArchive::extract() apply Unix permissions through symlinks without confining the target
+[0m[0m[1m[31mDate:     [0m 2026-10-10
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0369
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0369
+[0m[0m[1m[31mSeverity: [0m 9.1 (critical)
+[0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
+
+[0m[0m[1m[31mCrate:    [0m zip
+[0m[0m[1m[31mVersion:  [0m 2.3.0
+[0m[0m[1m[31mTitle:    [0m zip: `ZipArchive::extract` creates symbolic links whose attacker-controlled targets are outside the destination directory
+[0m[0m[1m[31mDate:     [0m 2026-10-09
+[0m[0m[1m[31mID:       [0m RUSTSEC-2026-0368
+[0m[0m[1m[31mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0368
 [0m[0m[1m[31mSolution: [0m Upgrade to >=9.0.0
 
 [0m[0m[1m[33mCrate:    [0m chrono
@@ -302,26 +302,10 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[0m[1m[33mCrate:    [0m heapless
 [0m[0m[1m[33mVersion:  [0m 0.8.0
 [0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m `Deque::make_contiguous` could lead to broken invariants
+[0m[0m[1m[33mTitle:    [0m `SortedLinkedList::zeroize` lead to an inconsistent state
 [0m[0m[1m[33mDate:     [0m 2026-11-18
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0581
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0581
-
-[0m[0m[1m[33mCrate:    [0m heapless
-[0m[0m[1m[33mVersion:  [0m 0.8.0
-[0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m `Spsc::peek` used `Relaxed` ordering where it should have use `Acquire`
-[0m[0m[1m[33mDate:     [0m 2026-11-18
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0575
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0575
-
-[0m[0m[1m[33mCrate:    [0m heapless
-[0m[0m[1m[33mVersion:  [0m 0.8.0
-[0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m Panicking `Drop` implementation could lead to UB
-[0m[0m[1m[33mDate:     [0m 2026-11-18
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0577
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0577
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0578
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0578
 
 [0m[0m[1m[33mCrate:    [0m heapless
 [0m[0m[1m[33mVersion:  [0m 0.8.0
@@ -334,26 +318,10 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[0m[1m[33mCrate:    [0m heapless
 [0m[0m[1m[33mVersion:  [0m 0.8.0
 [0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m `FindMutView::pop` after mutating the value would lead to a use after free
+[0m[0m[1m[33mTitle:    [0m The treiber stack implementation in heapless had a race condition
 [0m[0m[1m[33mDate:     [0m 2026-11-18
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0574
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0574
-
-[0m[0m[1m[33mCrate:    [0m heapless
-[0m[0m[1m[33mVersion:  [0m 0.8.0
-[0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m `SortedLinkedList::zeroize` lead to an inconsistent state
-[0m[0m[1m[33mDate:     [0m 2026-11-18
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0578
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0578
-
-[0m[0m[1m[33mCrate:    [0m heapless
-[0m[0m[1m[33mVersion:  [0m 0.8.0
-[0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m `IndexMap::truncate` could lead to an inconsistent state
-[0m[0m[1m[33mDate:     [0m 2026-11-18
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0576
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0576
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0580
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0580
 
 [0m[0m[1m[33mCrate:    [0m heapless
 [0m[0m[1m[33mVersion:  [0m 0.8.0
@@ -366,18 +334,42 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[0m[1m[33mCrate:    [0m heapless
 [0m[0m[1m[33mVersion:  [0m 0.8.0
 [0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m The treiber stack implementation in heapless had a race condition
+[0m[0m[1m[33mTitle:    [0m `IndexMap::truncate` could lead to an inconsistent state
 [0m[0m[1m[33mDate:     [0m 2026-11-18
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0580
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0580
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0576
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0576
 
-[0m[0m[1m[33mCrate:    [0m lru
-[0m[0m[1m[33mVersion:  [0m 0.12.5
+[0m[0m[1m[33mCrate:    [0m heapless
+[0m[0m[1m[33mVersion:  [0m 0.8.0
 [0m[0m[1m[33mWarning:  [0m unsound
-[0m[0m[1m[33mTitle:    [0m `IterMut` violates Stacked Borrows by invalidating internal pointer
-[0m[0m[1m[33mDate:     [0m 2026-01-07
-[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0002
-[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0002
+[0m[0m[1m[33mTitle:    [0m Panicking `Drop` implementation could lead to UB
+[0m[0m[1m[33mDate:     [0m 2026-11-18
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0577
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0577
+
+[0m[0m[1m[33mCrate:    [0m heapless
+[0m[0m[1m[33mVersion:  [0m 0.8.0
+[0m[0m[1m[33mWarning:  [0m unsound
+[0m[0m[1m[33mTitle:    [0m `Spsc::peek` used `Relaxed` ordering where it should have use `Acquire`
+[0m[0m[1m[33mDate:     [0m 2026-11-18
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0575
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0575
+
+[0m[0m[1m[33mCrate:    [0m heapless
+[0m[0m[1m[33mVersion:  [0m 0.8.0
+[0m[0m[1m[33mWarning:  [0m unsound
+[0m[0m[1m[33mTitle:    [0m `Deque::make_contiguous` could lead to broken invariants
+[0m[0m[1m[33mDate:     [0m 2026-11-18
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0581
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0581
+
+[0m[0m[1m[33mCrate:    [0m heapless
+[0m[0m[1m[33mVersion:  [0m 0.8.0
+[0m[0m[1m[33mWarning:  [0m unsound
+[0m[0m[1m[33mTitle:    [0m `FindMutView::pop` after mutating the value would lead to a use after free
+[0m[0m[1m[33mDate:     [0m 2026-11-18
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0574
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0574
 
 [0m[0m[1m[33mCrate:    [0m lru
 [0m[0m[1m[33mVersion:  [0m 0.12.5
@@ -386,6 +378,14 @@ Generated on: Thu Nov 19 09:59:30 UTC 2026
 [0m[0m[1m[33mDate:     [0m 2026-05-12
 [0m[0m[1m[33mID:       [0m RUSTSEC-2026-0253
 [0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0253
+
+[0m[0m[1m[33mCrate:    [0m lru
+[0m[0m[1m[33mVersion:  [0m 0.12.5
+[0m[0m[1m[33mWarning:  [0m unsound
+[0m[0m[1m[33mTitle:    [0m `IterMut` violates Stacked Borrows by invalidating internal pointer
+[0m[0m[1m[33mDate:     [0m 2026-01-07
+[0m[0m[1m[33mID:       [0m RUSTSEC-2026-0002
+[0m[0m[1m[33mURL:      [0m https://rustsec.org/advisories/RUSTSEC-2026-0002
 
 [0m[0m[1m[33mCrate:    [0m rustix
 [0m[0m[1m[33mVersion:  [0m 1.1.4
@@ -469,119 +469,119 @@ workspace: /home/runner/work/PropChain-contract/PropChain-contract/Cargo.toml
 [1m[92m   Compiling[0m toml_edit v0.25.11+spec-1.1.0
 [1m[92m   Compiling[0m version_check v0.9.5
 [1m[92m   Compiling[0m generic-array v0.14.7
-[1m[92m   Compiling[0m syn v1.0.109
 [1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m syn v1.0.109
 [1m[92m   Compiling[0m proc-macro-crate v3.5.0
 [1m[92m   Compiling[0m zmij v1.0.21
-[1m[92m   Compiling[0m strsim v0.10.0
-[1m[92m   Compiling[0m ident_case v1.0.1
-[1m[92m   Compiling[0m serde_json v1.0.149
-[1m[92m   Compiling[0m once_cell v1.21.4
 [1m[92m   Compiling[0m fnv v1.0.7
+[1m[92m   Compiling[0m serde_json v1.0.149
+[1m[92m   Compiling[0m strsim v0.10.0
+[1m[92m   Compiling[0m once_cell v1.21.4
+[1m[92m   Compiling[0m ident_case v1.0.1
 [1m[92m   Compiling[0m konst_macro_rules v0.2.19
 [1m[92m   Compiling[0m konst v0.2.20
 [1m[92m   Compiling[0m parity-scale-codec v3.7.5
 [1m[92m   Compiling[0m arrayvec v0.7.6
 [1m[92m   Compiling[0m const_format v0.2.36
-[1m[92m   Compiling[0m memchr v2.8.0
 [1m[92m   Compiling[0m byte-slice-cast v1.2.3
+[1m[92m   Compiling[0m memchr v2.8.0
 [1m[92m   Compiling[0m winnow v0.5.40
-[1m[92m   Compiling[0m darling_core v0.14.4
 [1m[92m   Compiling[0m serde_derive v1.0.228
-[1m[92m   Compiling[0m impl-trait-for-tuples v0.2.3
 [1m[92m   Compiling[0m parity-scale-codec-derive v3.7.5
+[1m[92m   Compiling[0m impl-trait-for-tuples v0.2.3
+[1m[92m   Compiling[0m darling_core v0.14.4
 [1m[92m   Compiling[0m derive_more-impl v1.0.0
-[1m[92m   Compiling[0m darling_macro v0.14.4
-[1m[92m   Compiling[0m darling v0.14.4
 [1m[92m   Compiling[0m scale-info-derive v2.11.6
 [1m[92m   Compiling[0m derive_more v0.99.20
 [1m[92m   Compiling[0m toml_datetime v0.6.11
-[1m[92m   Compiling[0m serde_derive_internals v0.29.1
+[1m[92m   Compiling[0m darling_macro v0.14.4
 [1m[92m   Compiling[0m toml_edit v0.19.15
-[1m[92m   Compiling[0m itoa v1.0.18
+[1m[92m   Compiling[0m darling v0.14.4
+[1m[92m   Compiling[0m serde_derive_internals v0.29.1
 [1m[92m   Compiling[0m schemars v0.8.22
+[1m[92m   Compiling[0m itoa v1.0.18
 [1m[92m   Compiling[0m schemars_derive v0.8.22
 [1m[92m   Compiling[0m typenum v1.20.0
 [1m[92m   Compiling[0m proc-macro-crate v1.3.1
 [1m[92m   Compiling[0m smallvec v1.15.1
 [1m[92m   Compiling[0m dyn-clone v1.0.20
-[1m[92m   Compiling[0m derive_more v1.0.0
 [1m[92m   Compiling[0m scale-decode-derive v0.11.1
+[1m[92m   Compiling[0m scale-encode-derive v0.6.0
+[1m[92m   Compiling[0m derive_more v1.0.0
 [1m[92m   Compiling[0m aho-corasick v1.1.4
 [1m[92m   Compiling[0m libc v0.2.186
-[1m[92m   Compiling[0m scale-encode-derive v0.6.0
 [1m[92m   Compiling[0m regex-syntax v0.8.10
 [1m[92m   Compiling[0m scale-info v2.11.6
+[1m[92m   Compiling[0m regex-automata v0.4.14
 [1m[92m   Compiling[0m crypto-common v0.1.7
 [1m[92m   Compiling[0m block-buffer v0.10.4
-[1m[92m   Compiling[0m regex-automata v0.4.14
 [1m[92m   Compiling[0m scale-type-resolver v0.1.1
 [1m[92m   Compiling[0m serde_spanned v0.6.9
-[1m[92m   Compiling[0m winnow v0.7.15
-[1m[92m   Compiling[0m zerocopy v0.8.48
 [1m[92m   Compiling[0m autocfg v1.5.0
-[1m[92m   Compiling[0m subtle v2.6.1
+[1m[92m   Compiling[0m zerocopy v0.8.48
 [1m[92m   Compiling[0m toml_write v0.1.2
+[1m[92m   Compiling[0m winnow v0.7.15
+[1m[92m   Compiling[0m subtle v2.6.1
 [1m[92m   Compiling[0m digest v0.10.7
 [1m[92m   Compiling[0m num-traits v0.2.19
 [1m[92m   Compiling[0m getrandom v0.2.17
 [1m[92m   Compiling[0m shlex v1.3.0
-[1m[92m   Compiling[0m find-msvc-tools v0.1.9
 [1m[92m   Compiling[0m same-file v1.0.6
+[1m[92m   Compiling[0m find-msvc-tools v0.1.9
+[1m[92m   Compiling[0m cc v1.2.61
 [1m[92m   Compiling[0m regex v1.12.3
 [1m[92m   Compiling[0m toml_edit v0.22.27
 [1m[92m   Compiling[0m walkdir v2.5.0
-[1m[92m   Compiling[0m cc v1.2.61
 [1m[92m   Compiling[0m rand_core v0.6.4
 [1m[92m   Compiling[0m scale-bits v0.5.0
 [1m[92m   Compiling[0m derive-syn-parse v0.2.0
-[1m[92m   Compiling[0m linkme-impl v0.3.36
-[1m[92m   Compiling[0m toml v0.8.23
-[1m[92m   Compiling[0m termcolor v1.4.1
 [1m[92m   Compiling[0m semver v1.0.28
 [1m[92m   Compiling[0m common-path v1.0.0
+[1m[92m   Compiling[0m termcolor v1.4.1
+[1m[92m   Compiling[0m linkme-impl v0.3.36
 [1m[92m   Compiling[0m rustc_version v0.4.1
-[1m[92m   Compiling[0m secp256k1-sys v0.9.2
+[1m[92m   Compiling[0m toml v0.8.23
 [1m[92m   Compiling[0m scale-decode v0.11.1
 [1m[92m   Compiling[0m docify_macros v0.2.9
+[1m[92m   Compiling[0m secp256k1-sys v0.9.2
 [1m[92m   Compiling[0m scale-encode v0.6.0
 [1m[92m   Compiling[0m zeroize_derive v1.4.3
 [1m[92m   Compiling[0m ink_prelude v5.1.1
-[1m[92m   Compiling[0m paste v1.0.15
-[1m[92m   Compiling[0m keccak v0.1.6
-[1m[92m   Compiling[0m linkme v0.3.36
-[1m[92m   Compiling[0m cpufeatures v0.2.17
 [1m[92m   Compiling[0m xxhash-rust v0.8.15
+[1m[92m   Compiling[0m paste v1.0.15
+[1m[92m   Compiling[0m cpufeatures v0.2.17
+[1m[92m   Compiling[0m linkme v0.3.36
+[1m[92m   Compiling[0m keccak v0.1.6
 [1m[92m   Compiling[0m zeroize v1.8.2
 [1m[92m   Compiling[0m docify v0.2.9
 [1m[92m   Compiling[0m integer-sqrt v0.1.5
 [1m[92m   Compiling[0m curve25519-dalek v4.1.3
 [1m[92m   Compiling[0m ink_primitives v5.1.1
 [1m[92m   Compiling[0m ppv-lite86 v0.2.21
+[1m[92m   Compiling[0m log v0.4.29
 [1m[92m   Compiling[0m lazy_static v1.5.0
 [1m[92m   Compiling[0m static_assertions v1.1.0
-[1m[92m   Compiling[0m log v0.4.29
-[1m[92m   Compiling[0m bounded-collections v0.2.4
 [1m[92m   Compiling[0m rand_chacha v0.3.1
 [1m[92m   Compiling[0m sp-arithmetic v26.1.0
-[1m[92m   Compiling[0m rand v0.8.6
 [1m[92m   Compiling[0m Inflector v0.11.4
+[1m[92m   Compiling[0m rand v0.8.6
+[1m[92m   Compiling[0m bounded-collections v0.2.4
 [1m[92m   Compiling[0m sha2 v0.10.9
 [1m[92m   Compiling[0m impl-serde v0.4.0
-[1m[92m   Compiling[0m curve25519-dalek-derive v0.1.1
 [1m[92m   Compiling[0m sp-debug-derive v14.0.0
+[1m[92m   Compiling[0m curve25519-dalek-derive v0.1.1
+[1m[92m   Compiling[0m either v1.15.0
 [1m[92m   Compiling[0m bitflags v1.3.2
 [1m[92m   Compiling[0m byteorder v1.5.0
-[1m[92m   Compiling[0m either v1.15.0
-[1m[92m   Compiling[0m sp-weights v31.1.0
 [1m[92m   Compiling[0m itertools v0.12.1
-[1m[92m   Compiling[0m merlin v3.0.0
 [1m[92m   Compiling[0m pallet-contracts-uapi v9.0.0
+[1m[92m   Compiling[0m merlin v3.0.0
+[1m[92m   Compiling[0m sp-weights v31.1.0
 [1m[92m   Compiling[0m ink_metadata v5.1.1
 [1m[92m   Compiling[0m getrandom_or_panic v0.0.3
+[1m[92m   Compiling[0m blake2 v0.10.6
 [1m[92m   Compiling[0m xcm-procedural v8.0.0
 [1m[92m   Compiling[0m secp256k1 v0.28.2
-[1m[92m   Compiling[0m blake2 v0.10.6
 [1m[92m   Compiling[0m sha3 v0.10.9
 [1m[92m   Compiling[0m derivative v2.2.0
 [1m[92m   Compiling[0m serde_bytes v0.11.19
@@ -606,13 +606,13 @@ workspace: /home/runner/work/PropChain-contract/PropChain-contract/Cargo.toml
 [1m[92m   Compiling[0m ink v5.1.1
 [1m[92m   Compiling[0m propchain-traits v1.0.0 (/home/runner/work/PropChain-contract/PropChain-contract/contracts/traits)
 [1m[92m   Compiling[0m propchain-bridge v1.0.0 (/home/runner/work/PropChain-contract/PropChain-contract/contracts/bridge)
-[1m[92m    Finished[0m `test` profile [optimized + debuginfo] target(s) in 54.95s
+[1m[92m    Finished[0m `test` profile [optimized + debuginfo] target(s) in 48.34s
 [1m[92m     Running[0m unittests src/lib.rs (target/debug/build/propchain-bridge/cbc23e3681725078/out/propchain_bridge-cbc23e3681725078)
 
 running 4 tests
+test bridge::tests::test_granular_pause_new_requests_blocks_only_new_requests ... ok
 test bridge::tests::test_granular_pause_cross_chain_blocks_only_cross_chain ... ok
 test bridge::tests::test_granular_pause_execution_blocks_only_execution ... ok
-test bridge::tests::test_granular_pause_new_requests_blocks_only_new_requests ... ok
 test bridge::tests::test_granular_pause_signing_blocks_only_signing ... ok
 
 test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 59 filtered out; finished in 0.00s
@@ -633,7 +633,7 @@ workspace: /home/runner/work/PropChain-contract/PropChain-contract/Cargo.toml
 [1m[33mwarning[0m: `oracle` (manifest) generated 1 warning
 [1m[33mwarning[0m: contracts/lending/Cargo.toml: Found `feature = ...` in `target.'cfg(...)'.dependencies`. This key is not supported for selecting dependencies and will not work as expected. Use the [features] section instead: https://doc.rust-lang.org/cargo/reference/features.html
 [1m[33mwarning[0m: `propchain-lending` (manifest) generated 1 warning
-[1m[92m    Finished[0m `test` profile [optimized + debuginfo] target(s) in 0.15s
+[1m[92m    Finished[0m `test` profile [optimized + debuginfo] target(s) in 0.13s
 [1m[92m     Running[0m unittests src/lib.rs (target/debug/build/propchain-bridge/cbc23e3681725078/out/propchain_bridge-cbc23e3681725078)
 
 running 1 test
@@ -657,7 +657,7 @@ workspace: /home/runner/work/PropChain-contract/PropChain-contract/Cargo.toml
 [1m[33mwarning[0m: `oracle` (manifest) generated 1 warning
 [1m[33mwarning[0m: contracts/lending/Cargo.toml: Found `feature = ...` in `target.'cfg(...)'.dependencies`. This key is not supported for selecting dependencies and will not work as expected. Use the [features] section instead: https://doc.rust-lang.org/cargo/reference/features.html
 [1m[33mwarning[0m: `propchain-lending` (manifest) generated 1 warning
-[1m[92m    Finished[0m `test` profile [optimized + debuginfo] target(s) in 0.15s
+[1m[92m    Finished[0m `test` profile [optimized + debuginfo] target(s) in 0.13s
 [1m[92m     Running[0m unittests src/lib.rs (target/debug/build/propchain-bridge/cbc23e3681725078/out/propchain_bridge-cbc23e3681725078)
 
 running 1 test
@@ -686,20 +686,20 @@ workspace: /home/runner/work/PropChain-contract/PropChain-contract/Cargo.toml
 [1m[92m   Compiling[0m unarray v0.1.4
 [1m[92m   Compiling[0m bitflags v2.11.1
 [1m[92m   Compiling[0m rand_core v0.9.5
+[1m[92m   Compiling[0m rand_chacha v0.9.0
 [1m[92m   Compiling[0m rand v0.9.4
 [1m[92m   Compiling[0m rand_xorshift v0.4.0
-[1m[92m   Compiling[0m rand_chacha v0.9.0
 [1m[92m   Compiling[0m proptest v1.11.0
 [1m[92m   Compiling[0m propchain-dex v1.0.0 (/home/runner/work/PropChain-contract/PropChain-contract/contracts/dex)
-[1m[92m    Finished[0m `test` profile [optimized + debuginfo] target(s) in 17.24s
+[1m[92m    Finished[0m `test` profile [optimized + debuginfo] target(s) in 14.62s
 [1m[92m     Running[0m unittests src/lib.rs (target/debug/build/propchain-dex/a615256fa4e3cc65/out/propchain_dex-a615256fa4e3cc65)
 
 running 5 tests
 test dex::swap_invariant::arbitrary_inputs_satisfy_k ... ok
-test dex::swap_invariant::k_invariant_zero_fee ... ok
 test dex::swap_invariant::k_invariant_large_swap ... ok
-test dex::swap_invariant::output_never_exceeds_reserve ... ok
 test dex::swap_invariant::k_invariant_small_swap ... ok
+test dex::swap_invariant::k_invariant_zero_fee ... ok
+test dex::swap_invariant::output_never_exceeds_reserve ... ok
 
 test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 40 filtered out; finished in 0.00s
 
